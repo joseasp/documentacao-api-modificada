@@ -11,14 +11,15 @@ import io.swagger.v3.oas.models.info.License;
 @Configuration
 public class SpringdocConfig {
 	@Bean
-	  public OpenAPI springShopOpenAPI() {
-	      return new OpenAPI()
-	              .info(new Info().title("API Restful com Documentação")
-	              .description("Exemplo de API Restful utilizando Springdoc para documentação.")
-	              .version("1.0.0")
-	              .license(new License().name("Apache 2.0").url("http://springdoc.org")))
-	              .externalDocs(new ExternalDocumentation()
-	              .description("Link do Repositório da Aplicação - APIRestful Documentation")
-	              .url("https://github.com/endereco-repositorio-api"));
-	  }
+	public OpenAPI springShopOpenAPI() {
+		return new OpenAPI()
+				.info(new Info()
+						.title("API de Gerenciamento de Produtos e Pedidos")
+						.description("API desenvolvida para gerenciar informações de produtos e pedidos, utilizando Springdoc para documentação.")
+						.version("2.0.0")
+						.license(new License().name("Licença Personalizada").url("http://meu-site-exemplo.com/licenca")))
+				.externalDocs(new ExternalDocumentation()
+						.description("Repositório no GitHub com o código da aplicação")
+						.url("https://github.com/SeuUsuario/api-gerenciamento-produtos"));
+	}
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="seguranca (1)" />
+        <module name="projeto" />
+        <module name="seguranca" />
+        <module name="integrado" />
+        <module name="documentacao" />
+      </profile>
+      <profile name="Annotation profile for integrado (2)" enabled="true">
+        <sourceOutputDir name="../../modulo14/aplicacao/backend/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../modulo14/aplicacao/backend/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="integrado (2)" />
+      </profile>
+      <profile name="Annotation profile for integrado" enabled="true">
+        <sourceOutputDir name="../../../modulo13/aplicacao/backend/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../../modulo13/aplicacao/backend/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="integrado (1)" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="documentacao" options="-parameters" />
+      <module name="integrado" options="-parameters" />
+      <module name="integrado (1)" options="-parameters" />
+      <module name="integrado (2)" options="-parameters" />
+      <module name="projeto" options="-parameters" />
+      <module name="seguranca" options="-parameters" />
+      <module name="seguranca (1)" options="-parameters" />
+    </option>
+  </component>
+</project>
